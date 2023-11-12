@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./multimedia/robotico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Centro educativo/RoboXitos/index</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <a href="./index.html">
+                <img src="./multimedia/logoRoboXitos.png" alt="Logo RoboXitos" width="300vw" height="auto"></a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navUl">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#talleres">Nuestros talleres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#visitar">Veni a visitarnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto y reservación</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./multimedia/botonLuz.png" alt="" id="botonModoNocturno">
+                        </li>
+                        <li>
+                            <div class="login-container">
+                                <form class="form-inline" id="login-form">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Usuario"
+                                        aria-label="Usuario" id="username" required>
+                                    <input class="form-control mr-sm-2" type="password" placeholder="Contraseña"
+                                        aria-label="Contraseña" id="password" required>
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar
+                                        Sesión</button>
+                                </form>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="portada">
+            <div class="container">
+                <h1>Bienvenido a RoboXitos</h1>
+                <p>Somos un centro de robótica diseñado especialmente para niños y jóvenes de 5 a 17 años. En RoboXitos,
+                    exploramos el emocionante mundo de la robótica de una manera divertida y educativa.</p>
+                <p>Nuestro objetivo es inspirar a los estudiantes a desarrollar habilidades creativas, lógicas y de
+                    resolución de problemas mientras se sumergen en proyectos de robótica emocionantes.</p>
+                <p>¡Estamos emocionados de comenzar esta aventura robótica contigo!</p>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./multimedia/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/6.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/7.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="imgPresentacion">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img class="img1" src="./multimedia/robotEstudiando.jpg"
+                            alt="Robot estudiando en nuestro centro de robotica" onmouseover="cambioImg()"
+                            onmouseout="cambioImg()">
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <section class="talleres" id="talleres">
+                            <article class="taller1">
+                                <h2>Taller Inicial de Robótica</h2>
+                                <p>Nivel: Principiante (5-8 años)</p>
+                                <p>Descripción: Introducción a conceptos básicos de robótica con actividades prácticas y
+                                    divertidas.</p>
+                            </article>
+
+                            <article class="taller2">
+                                <h2>Aventuras Robóticas</h2>
+                                <p>Nivel: Intermedio (9-12 años)</p>
+                                <p>Descripción: Exploración de proyectos robóticos más avanzados y desafiantes.</p>
+                            </article>
+
+                            <article class="taller3">
+                                <h2>RoboCreatividad</h2>
+                                <p>Nivel: Avanzado (13-15 años)</p>
+                                <p>Descripción: Desarrollo de proyectos creativos que combinan arte y robótica.</p>
+                            </article>
+
+                            <article class="taller4">
+                                <h2>Competencia de Robots</h2>
+                                <p>Nivel: Experto (16-17 años)</p>
+                                <p>Descripción: Preparación para competiciones de robótica con enfoque en estrategias y
+                                    diseño.</p>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./multimedia/niños1.jpg" alt="niños estudiando robotica y divirtiendose">
+                        </div>
+                        <div class="col">
+                            <video src="./multimedia/videoRoboxitos.mp4" muted autoplay loop width="100%"
+                                height="100%"></video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="visitanos" id="visitar">
+            <h2>Visitanos en RoboXitos</h2>
+            <p>Descubre el fascinante mundo de la robótica en RoboXitos, el centro diseñado especialmente para niños y
+                jóvenes de 5 a 17 años. En nuestro espacio, cultivamos la creatividad, la lógica y el trabajo en equipo
+                a
+                través de emocionantes talleres de robótica.</p>
+
+            <p>¿Qué hacemos en RoboXitos? Proporcionamos a los participantes la oportunidad de explorar, diseñar y
+                construir robots mientras se sumergen en desafíos divertidos y educativos. Nuestros instructores
+                altamente
+                capacitados guiarán a los estudiantes en un viaje de descubrimiento tecnológico.</p>
+
+            <p>Únete a nosotros para:</p>
+            <ul>
+                <li>Experimentar con la última tecnología en robótica educativa.</li>
+                <li>Aprender habilidades STEM fundamentales de una manera divertida y práctica.</li>
+                <li>Participar en competiciones emocionantes y demostrar tus habilidades de robótica.</li>
+                <li>Fomentar la creatividad y la resolución de problemas.</li>
+            </ul>
+
+            <p>¡Ven y forma parte de nuestra comunidad RoboXitos! Estamos emocionados de inspirar a la próxima
+                generación de
+                mentes brillantes y apasionadas por la robótica.</p>
+
+            <p>Para obtener más información y reservar tu lugar, ¡contáctanos hoy mismo! <a
+                    href="contacto.html">Aqui!</a></p>
+
+            </div>
+            </div>
+            <div class="mapaVisitanos">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1133598272663!2d-58.362971925372335!3d-34.651839972937005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33357f7bdee91%3A0x2ba7b70abb5aa37!2sManuel%20Estevez%20847%2C%20Dock%20Sud%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697412229886!5m2!1ses-419!2sar"
+                    width="40%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="flecha">
+                <img src="./multimedia/circulo-de-flecha-hacia-arriba.svg" id="eventoDeFlecha"
+                    alt="flecha-Hacia-Arriba">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="footerContacto">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6 footerUbicacion">
+                                <div class="mapa">
+                                    <h2>RoboXitos</h2>
+                                    <h3>Horarios de atencion</h3>
+                                    <ul>
+                                        <li>
+                                            De lunes a viernes
+                                            de 10 a 22 hs
+                                        </li>
+                                        <li>
+                                            Fin de semana de 10 a 19hs
+                                        </li>
+                                    </ul>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1133598272663!2d-58.362971925372335!3d-34.651839972937005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33357f7bdee91%3A0x2ba7b70abb5aa37!2sManuel%20Estevez%20847%2C%20Dock%20Sud%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697412229886!5m2!1ses-419!2sar"
+                                        width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 infoContacto">
+                                <h3>Contacto</h3>
+                                <p>Llama : +34 1165832021 / 46980054
+                                </p>
+                                <p>
+                                    Mail: info_roboxitos@gmail.com
+                                </p>
+                                <p>
+                                    o contactanos directamente a:
+                                </p>
+                                <a href="./contacto.html"><span style="font-weight: 500;">Aquí</span></a>
+                                <img src="./multimedia/asistente-de-robot.png" width="30%" height="auto" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="redesPieDeNota">
+            <div>
+                <h4>Seguinos</h4>
+                <div>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="multimedia/x.jfif"
+                            alt="logoTwitter"></a>
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="multimedia/f.jfif"
+                            alt="logoFacebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="multimedia/ing.jfif"
+                            alt="logoInstagram"></a>
+                </div>
+            </div>
+            <div class="pie">
+                <p>Centro de robotica RoboXitos | Copyright © 2018 | Todos los derechos reservados | Diseño Jesica
+                    Franco | Origami
+                    Studio
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- script de sweet alert -->
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
+</body>
+
+</html>
